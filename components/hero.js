@@ -1,22 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
 
-export default function Hero({ image, alt }) {
+export default function Hero() {
   return (
-    <div className="relative w-full flex items-center justify-center shadow">
-      <Image
-        src={`/images/${image}`}
-        className="w-full h-full absolute object-center object-cover"
-        width={1080}
-        height={1080}
-        alt={alt}
-        priority
-      />
-      <div className="container px-10 flex flex-col gap-2 lg:max-w-4xl text-center z-10 py-32 lg:py-60">
-        <h1 className="text-2xl lg:text-4xl text-white">
-          Next.js Pexels Project
-        </h1>
-        <p className="text-white">
+    <div className="relative container px-10 py-28 mx-auto w-full flex items-center justify-center font-display font-light">
+      <div className="flex flex-col gap-3 lg:max-w-4xl text-center">
+        <h1 className="text-2xl">Next.js Pexels Project</h1>
+        <p>
           Welcome to my little project working with{" "}
           <Link
             href="https://www.pexels.com/"

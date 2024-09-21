@@ -33,7 +33,7 @@ export default function Home({ photos, page }) {
   return (
     <>
       <Header />
-      <Hero image="mountains.webp" alt="Mountains" />
+      <Hero />
 
       {/* Page */}
       <Layout>
